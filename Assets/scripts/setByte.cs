@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class setByte : MonoBehaviour
 {
+    [SerializeField] Byte myByte;
+    [SerializeField] int newValue;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class setByte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        myByte.SetByte(newValue);
     }
 }
